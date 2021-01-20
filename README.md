@@ -35,14 +35,37 @@ After loading in the dependencies, defining/loading in the workspace, naming and
   <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/automl%20experiment/best%20model%20summary.png">
 </p>
 
-* This model was deployed and application Insights was enabled with the logs.py script.
+* This model was deployed using the Azure Container Instance (ACI), authentication enabled and application Insights was enabled with the logs.py script. And the logs 
 
 <p align="center">
   <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/deploy%20best%20model/app%20insight%20enabled.png">
 </p>
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/deploy%20best%20model/logs%202.png.png">
+</p>
 
-## Screencast
+* The [swagger.json](https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/swagger/swagger.json) file was put in the same directory as the [serve.py](https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/swagger/serve.py) and [swagger.sh](https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/swagger/swagger.sh) file. I changed the port of the swagger.sh file to 9000:8080 from 80:8080, then I accessed the swagger-ui interactive pane on localhost and viewed the HTTP API methods and responses for the model. View [here](https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/tree/master/screenshots%20exp/swagger%20documentation)
+
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/swagger%20documentation/swagger%201.png">
+</p>
+
+* Consuming the endpoints using endpoint.py file, inputting the REST endpoint URL and the primary key(available because of the authentication enablement), i got a json output
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/endpoints/endpoint%20with%20json%20output.png">
+</p>
+
+* In the benchmark.sh file, view below, my experiment had no failed request and the time per request was within and well below the 60secs limit by Azure
+
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/endpoints/apache%20benchmark%20output.png">
+</p>
+
+
+## Screen recording
 https://youtu.be/UhZcJk9J2b8
+
+## Standout suggestions
 
 
 publishing the pipeline enables a REST endpoint to rerun the pipeline from any HTTP library on any platform
