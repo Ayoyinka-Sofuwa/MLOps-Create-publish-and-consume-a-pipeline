@@ -17,3 +17,5 @@ And the experiment was submitted.
 After the AutoML experiment was completed, the best model was VotingEnsemble with an accuracy of 91.4% and AUC weighted of 94.6%.
 This model was deployed and application Insights was enabled with the logs.py script.
 
+
+publishing the pipeline enables a REST endpoint to rerun the pipeline from any HTTP library on any platform
