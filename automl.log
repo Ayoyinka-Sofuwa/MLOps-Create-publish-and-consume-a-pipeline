@@ -1,0 +1,7 @@
+2021-01-20 12:52:22.486 - INFO - 7056 - azureml.automl.runtime.distributed.utilities.horovod_initialized:58 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-01-20 12:52:26.478 - INFO - 7056 - azureml.train.automl.run._log_activity:54 - ActivityStarted: GetOutput
+2021-01-20 12:52:26.484 - INFO - 7056 - azureml.train.automl.run._log_activity:54 - ActivityStarted: GetOutput
+2021-01-20 12:52:26.499 - INFO - 7056 - azureml.train.automl.run._log_activity:54 - ActivityStarted: GetChildren
+2021-01-20 12:53:00.684 - INFO - 7056 - azureml.train.automl.run._log_activity:92 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=34184.98[ms]
+2021-01-20 12:53:00.810 - INFO - 7056 - azureml.train.automl.run._log_activity:92 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=34325.83[ms]
+2021-01-20 12:53:01.430 - INFO - 7056 - azureml.train.automl.run._log_activity:92 - ActivityCompleted: Activity=GetOutput, HowEnded=Success, Duration=34952.33[ms]

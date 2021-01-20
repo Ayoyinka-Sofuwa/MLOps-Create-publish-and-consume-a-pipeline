@@ -1,0 +1,40 @@
+2021-01-20 12:08:50.154 - INFO - 7056 - azureml.train.automl.automlconfig._start_execution:207 - Submitting remote.
+2021-01-20 13:24:03.304 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package azureml-train-automl missing from dependencies file.
+2021-01-20 13:24:03.306 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: azureml-train-automl==1.19.0.*
+2021-01-20 13:24:03.306 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package pandas missing from dependencies file.
+2021-01-20 13:24:03.306 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: pandas==0.25.1
+2021-01-20 13:24:03.308 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package psutil missing from dependencies file.
+2021-01-20 13:24:03.308 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: psutil>5.0.0,<6.0.0
+2021-01-20 13:24:03.308 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package scikit-learn missing from dependencies file.
+2021-01-20 13:24:03.308 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: scikit-learn==0.22.1
+2021-01-20 13:24:03.308 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package numpy missing from dependencies file.
+2021-01-20 13:24:03.308 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: numpy~=1.18.0
+2021-01-20 13:24:03.309 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package py-xgboost missing from dependencies file.
+2021-01-20 13:24:03.309 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: py-xgboost<=0.90
+2021-01-20 13:24:03.309 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package inference-schema missing from dependencies file.
+2021-01-20 13:24:03.310 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package fbprophet missing from dependencies file.
+2021-01-20 13:24:03.310 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:205 - Using pinned version: fbprophet==0.5
+2021-01-20 13:24:03.310 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:199 - Package setuptools-git missing from dependencies file.
+2021-01-20 13:24:03.310 - INFO - 4322 - azureml.train.automl._azureautomlclient.modify_run_configuration:209 - Using installed version: setuptools-git==1.2
+2021-01-20 13:24:03.323 - INFO - 4322 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-20 13:24:03.324 - INFO - 4322 - azureml.automl.core.dataset_utilities._save_datasets_to_json:148 - JSON serialization of input of type <class 'NoneType'> is un-supported.
+2021-01-20 13:24:03.326 - INFO - 4322 - azureml.train.automl._azureautomlclient._validate_input:663 - Start data validation.
+2021-01-20 13:24:03.350 - CRITICAL - 4322 - azureml.train.automl._azureautomlclient.log_traceback:224 - Type: Unclassified
+Class: ValueError
+Message: experiment_id should not be None.
+Traceback:
+  File "_azureautomlclient.py", line 672, in _validate_input
+    validation_results = self._jasmine_client.post_validate_service(parent_run_dto)
+  File "jasmine_client.py", line 60, in post_validate_service
+    self._client.jasmine.validate_run_input, create_parent_run_dto)
+  File "experiment_client.py", line 261, in _execute_with_experimentid_arguments
+    raise ValueError("experiment_id should not be None.")
+
+ExceptionTarget: Unspecified
+2021-01-20 13:24:03.350 - WARNING - 4322 - azureml.train.automl._azureautomlclient._validate_input:680 - Validation service meet exceptions, continue training now.
+2021-01-20 14:06:41.887 - INFO - 4322 - azureml.automl.runtime.distributed.utilities.horovod_initialized:58 - Horovod not found in current environment. Distribution via Horovod will be disabled.
+2021-01-20 14:06:42.766 - INFO - 4322 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping enabled: False
+2021-01-20 14:06:42.767 - INFO - 4322 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping timeout: 86400
+2021-01-20 14:06:42.768 - INFO - 4322 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping enabled: False
+2021-01-20 14:06:42.768 - INFO - 4322 - azureml.automl.runtime.featurization.data_transformer._logger_wrapper:81 - Feature sweeping timeout: 86400
+2021-01-20 14:07:20.403 - INFO - 4322 - azureml.automl.runtime.shared.memory_utilities._is_low_memory:208 - Total ram: 14706561024 bytes, Current Available memory: 9139707904 bytes. Low memory threshold: 0.5
