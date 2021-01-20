@@ -7,6 +7,12 @@ In this project, we build a Machine learning workflow from creating an AutoML ex
 I trained a classifier Automated learning experiment with the bank marketing dataset to determine if the customers will make a fixed deposit or not, using features containing their personal and professional information, and details. Then I deployed the best model and consumed the endpoint using a swagger-ui API. 
 After this, I created, published and consumed a pipeline to make it publicly available and allow for version control.
 
+## Architectural diagram
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/architectural%20diagram.png">
+</p>
+
+
 ## Process
 To Create the AutoML experiment int the SDK, I first created a compute instance of STANDARD_DS3_V2.
 After loading in the dependencies, defining/loading in the workspace, naming and creating a directory for the experiment, I created a compute target for the AutoMl run and loaded the dataset using the 'key' and URL.
@@ -16,6 +22,9 @@ And the experiment was submitted.
 
 After the AutoML experiment was completed, the best model was VotingEnsemble with an accuracy of 91.4% and AUC weighted of 94.6%.
 This model was deployed and application Insights was enabled with the logs.py script.
+
+## Screencast
+https://youtu.be/UhZcJk9J2b8
 
 
 publishing the pipeline enables a REST endpoint to rerun the pipeline from any HTTP library on any platform
