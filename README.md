@@ -14,6 +14,7 @@ After this, I created, published and consumed a pipeline to make it publicly ava
 
 ## Key Steps
 ### Process
+#### AUTOML EXPERIMENT
 To Create the AutoML experiment int the SDK, I first created a compute instance of STANDARD_DS3_V2.
 After loading in the dependencies, defining/loading in the workspace, naming and creating a directory for the experiment, I created a compute target for the AutoMl run and loaded the dataset using the 'key' and URL.
 * the dataset was registered in the workspace
@@ -34,6 +35,8 @@ After loading in the dependencies, defining/loading in the workspace, naming and
 <p align="center">
   <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/automl%20experiment/best%20model%20summary.png">
 </p>
+
+#### DEPLOY THE MODEL AND CONSUME ENDPOINTS
 
 * This model was deployed using the Azure Container Instance (ACI), authentication enabled and application Insights was enabled with the logs.py script. And the logs 
 
@@ -61,6 +64,37 @@ After loading in the dependencies, defining/loading in the workspace, naming and
   <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/endpoints/apache%20benchmark%20output.png">
 </p>
 
+#### CREATE, PUBLISH AND CONSUME THE PIPELINE
+* Pipeline Created
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/pipeline%20created.png">
+</p>
+
+Pipeline endpoint
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/pipeline%20endpoint.png">
+</p>
+
+Dataset in the automl module
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/dataset%20with%20automl%20module.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/published%20pipeline%20overview%20showing%20active.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/run%20details%20complete.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/run%20details%20widgets.png">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/in%20ml%20studio%2C%20scheduled.png">
+</p>
 
 ## Screen recording
 https://youtu.be/UhZcJk9J2b8
