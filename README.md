@@ -12,6 +12,9 @@ After this, I created, published and consumed a pipeline to make it publicly ava
   <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/architectural%20diagram.png">
 </p>
 
+## Improvement.
+To improve the model in the future, I will try interact with the pipeline endpoint to monitor how my model is performing and detect data drift.
+
 ## Key Steps
 ### Process
 #### AUTOML EXPERIMENT
@@ -65,7 +68,9 @@ After loading in the dependencies, defining/loading in the workspace, naming and
 </p>
 
 #### CREATE, PUBLISH AND CONSUME THE PIPELINE
-* Pipeline Created
+* To create a pipeline, I adjusted all the configurations to suit the configuration of the AutoML experiment. Pipeline was created and submitted for a run using the AutoML configuration. I retrieved all the metrics for the 45 child runs in my experiment, then retrieved the best model. After testing the data on the best fitted model, I published the pipeline to enable a REST endpoint to rerun the pipeline from any HTTP library on any platform. And to consume it, I submitted an HTTP POST request to interact with the pipeline endpoint.
+* All steps shown below
+
 <p align="center">
   <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/pipeline/pipeline%20created.png">
 </p>
@@ -100,6 +105,6 @@ Dataset in the automl module
 https://youtu.be/UhZcJk9J2b8
 
 ## Standout suggestions
+* I exported my data to support ONNX and was able to extract the best model in an ONNX file
 
 
-publishing the pipeline enables a REST endpoint to rerun the pipeline from any HTTP library on any platform
