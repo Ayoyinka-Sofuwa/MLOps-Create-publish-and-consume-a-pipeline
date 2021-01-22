@@ -21,7 +21,8 @@ To improve the experiment in the future:
 </p>
 
 * I would increase the number of iterations in my AutoML configuration to create room for better performance.
-* I would interact with the pipeline endpoint to monitor how my model is performing and detect data drift.
+* I would also run my pipeline as a batch inference pipeline, to run in parallel, using the ParallelRunConfig class thereby increasing development productivity and decreasing end-to-end cost.
+* I would interact with the pipeline endpoint to monitor how my model is performing and detect data drift, if any.
 
 ## Key Steps
 ### Process
