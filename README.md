@@ -12,8 +12,11 @@ After this, I created, published and consumed a pipeline to make it publicly ava
   <img src="https://github.com/Ayoyinka-Sofuwa/MLOps-Create-publish-and-consume-a-pipeline/blob/master/screenshots%20exp/architectural%20diagram.png">
 </p>
 
-## Improvement.
-To improve the model in the future, I will try interact with the pipeline endpoint to monitor how my model is performing and detect data drift.
+## Improvement for future work.
+To improve the experiment in the future:
+* I would increase the amount of data to make it more balanced because the AutoMl run alerted me of imbalanced data postential issue which can be fixed by adding more data.This could also indicate a better output in my endpoint.
+* I would increase the number of iterations in my AutoML configuration to create room for better performance.
+* I will try interact with the pipeline endpoint to monitor how my model is performing and detect data drift.
 
 ## Key Steps
 ### Process
